@@ -1,0 +1,135 @@
+#page {
+    margin: 20px;
+}
+
+.centered-title {
+    text-align: center;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-wrapper form {
+    width: 400px;
+}
+
+.login-wrapper form button {
+    width: 400px;
+}
+
+form {
+    min-width: 250px;
+}
+
+.boards {
+    text-align: center;
+    background: lightblue;
+    width: 250px;
+}
+
+.other-boards {
+    background: lightgreen;
+}
+
+.no-decoration, .no-decoration:active:hover, .no-decoration:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+.lists * {
+    font-size: 10px !important;
+}
+/* Lists */
+
+.lists-container::-webkit-scrollbar {
+    height: 2.4rem;
+}
+
+.lists-container::-webkit-scrollbar-thumb {
+    background-color: #66a3c7;
+    border: 0.8rem solid #0079bf;
+    border-top-width: 0;
+}
+
+.lists-container {
+    display: flex;
+    align-items: start;
+    padding: 0 0.8rem 0.8rem;
+    height: calc(100vh - 8.6rem);
+}
+
+.list {
+    flex: 0 0 27rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e4e6;
+    max-height: calc(100vh - 11.8rem);
+    border-radius: 0.3rem;
+    margin-right: 1rem;
+}
+
+.list:last-of-type {
+    margin-right: 0;
+}
+
+.list-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    padding: 1rem;
+}
+
+.list-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    padding: 0 0.6rem 0.5rem;
+    overflow-y: auto;
+}
+
+.list-items::-webkit-scrollbar {
+    width: 1.6rem;
+}
+
+.list-items::-webkit-scrollbar-thumb {
+    background-color: #c4c9cc;
+    border-right: 0.6rem solid #e2e4e6;
+}
+
+.list-items li {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.3;
+    background-color: #fff;
+    padding: 0.65rem 0.6rem;
+    color: #4d4d4d;
+    border-bottom: 0.1rem solid #ccc;
+    border-radius: 0.3rem;
+    margin-bottom: 0.6rem;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.list-items li:last-of-type {
+    margin-bottom: 0;
+}
+
+.list-items li:hover {
+    background-color: #eee;
+}
+
+.button-no-decoration {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
